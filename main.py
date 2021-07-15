@@ -3,7 +3,7 @@
 # TODO прикрутить корпус для чат-бота и закинуть в longpool для автоматизации ответов на частые вопросы
 
 import vk_api  # использование VK API
-from vk_api.utils import get_random_id  # снижение количество повторных отправок сообщения
+from vk_api.utils import get_random_id  # снижение количества повторных отправок сообщения
 from dotenv import load_dotenv  # загрузка информации из .env-файла
 import os  # работа с файловой системой
 import random  # генератор случайных чисел
