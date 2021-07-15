@@ -1,0 +1,9 @@
+.idea/*
+__pycache__/
+
+build/*
+dist/*
+
+**/*.whl
+**/*.env
+**/*.spec
