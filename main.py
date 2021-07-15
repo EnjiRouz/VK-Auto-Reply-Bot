@@ -108,7 +108,7 @@ def create_schedule():
     Создание расписания отправки сообщений со случайным временем в заданном промежутке
     """
 
-    morning_time = str(random.randint(7, 9))+":"+str(random.randint(10, 59))
+    morning_time = "0"+str(random.randint(7, 9))+":"+str(random.randint(10, 59))
     lunch_time = str(random.randint(11, 13))+":"+str(random.randint(10, 59))
     miss_time = str(random.randint(15, 17))+":"+str(random.randint(10, 59))
     evening_time = str(random.randint(18, 20))+":"+str(random.randint(10, 59))
