@@ -4,7 +4,7 @@
 
 [EN] VKontakte User Bot with scheduled message sending.
 
-## Требования (Requirements):
+## Требования:
 * `pip install vk-api`
 * `pip install schedule`
 * создать `.env`-файл для того, чтобы хранить переменные окружения `ACCESS_TOKEN` и `USER_ID`
