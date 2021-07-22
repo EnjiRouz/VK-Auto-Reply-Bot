@@ -20,6 +20,23 @@ USER_ID="1234567890"
 * сложный путь: декомпилировать приложение KateMobile и получить данные приложения для получения токена через запрос
 * стандартный путь: создать своё приложение для ВКонтакте [см. документацию](https://vk.com/dev/manuals)
 
+## Примеры использования
+```python
+# создание и запуск обычного бота
+bot = Bot()
+    
+# отправка тестового сообщения
+bot.send_message()
+    
+# отправка сообщения с заданными параметрами
+bot.send_message(receiver_user_id="1234567890", message_text="Привет, это сообщение отправлено автоматически")
+```
+
+```python
+# создание и запуск бота, отправляющего сообщения по расписанию
+scheduled_bot = ScheduledBot()
+```
+
 ## Requirements:
 * `pip install vk-api`
 * `pip install schedule`
@@ -35,3 +52,20 @@ USER_ID="1234567890"
 * fast way: to use https://vkhost.github.io/
 * advanced way: decompile KateMobile app and get its data to make auth request
 * normal way: create your own app using [docs](https://vk.com/dev/manuals)
+
+## Usage Examples
+```python
+# simple bot start
+bot = Bot()
+    
+# sending test message
+bot.send_message()
+    
+# sending message with initialized properties
+bot.send_message(receiver_user_id="1234567890", message_text="Hello, this message was sent automatically")
+```
+
+```python
+# scheduled bot start
+scheduled_bot = ScheduledBot()
+```
