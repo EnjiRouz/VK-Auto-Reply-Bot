@@ -21,7 +21,10 @@ USER_ID="1234567890"
 * стандартный путь: создать своё приложение для ВКонтакте [см. документацию](https://vk.com/dev/manuals)
 
 ## Примеры использования
+##### Использование Bot:
 ```python
+from simple_bot import Bot
+
 # создание и запуск обычного бота
 bot = Bot()
     
@@ -32,9 +35,21 @@ bot.send_message()
 bot.send_message(receiver_user_id="1234567890", message_text="Привет, это сообщение отправлено автоматически")
 ```
 
+##### Использование Scheduled Bot:
 ```python
+from scheduled_bot import ScheduledBot
+
 # создание и запуск бота, отправляющего сообщения по расписанию
 scheduled_bot = ScheduledBot()
+```
+
+##### Использование LongPoll Bot:
+```python
+from longpoll_bot import LongPollBot
+
+# создание и запуск бота, автоматически отвечающего на заданные сообщения
+long_poll_bot = LongPollBot()
+long_poll_bot.run_long_poll()
 ```
 
 ## Requirements:
@@ -54,7 +69,10 @@ USER_ID="1234567890"
 * normal way: create your own app using [docs](https://vk.com/dev/manuals)
 
 ## Usage Examples
+##### Simple Bot Usage:
 ```python
+from simple_bot import Bot
+
 # simple bot start
 bot = Bot()
     
@@ -65,7 +83,19 @@ bot.send_message()
 bot.send_message(receiver_user_id="1234567890", message_text="Hello, this message was sent automatically")
 ```
 
+##### Scheduled Bot Usage:
 ```python
+from scheduled_bot import ScheduledBot
+
 # scheduled bot start
 scheduled_bot = ScheduledBot()
+```
+
+##### LongPoll Bot Usage:
+```python
+from longpoll_bot import LongPollBot
+
+# long poll bot start with an automatic response to managed messages
+long_poll_bot = LongPollBot()
+long_poll_bot.run_long_poll()
 ```
