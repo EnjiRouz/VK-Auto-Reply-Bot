@@ -5,8 +5,7 @@
 [EN] VKontakte User Bot with scheduled message sending, NLU (Nature Language Understanding) and managed responses
 
 ## Требования:
-* `pip install vk-api`
-* `pip install schedule`
+* `pip install requirements.txt`
 * создать `.env`-файл для того, чтобы хранить переменные окружения `ACCESS_TOKEN` и `USER_ID`
 
 ## Пример .env-файла:
@@ -62,8 +61,7 @@ nlu_longpoll_bot.run_long_poll()
 ```
 
 ## Requirements:
-* `pip install vk-api`
-* `pip install schedule`
+* `pip install requirements.txt`
 * create `.env` file to store `ACCESS_TOKEN` and `USER_ID` values
 
 ## .env-file example:

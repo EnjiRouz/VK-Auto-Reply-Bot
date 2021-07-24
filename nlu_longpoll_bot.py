@@ -6,7 +6,7 @@ from vk_api.longpoll import VkEventType  # использование VkEventTyp
 import zipfile  # для распаковки архива датасета с диалогами
 import os.path  # для проверки наличия файла
 import random  # для генерации случайных ответов
-import nltk  # библиотека для есественной обработки языка
+import nltk  # библиотека для естественной обработки языка
 import json  # представление в качестве JSON
 
 
