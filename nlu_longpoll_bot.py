@@ -208,6 +208,7 @@ class NLULongPollBot(LongPollBot):
         """
         Загрузка датасета диалогов для чат-бота путём парсинга файла
         Открытые датасеты диалогов для обучения бота: https://github.com/Koziev/NLP_Datasets
+        Можно использовать выгрузку истории сообщений из собственных диалогов ВКонтакте в таком же виде
         """
 
         if not os.path.isfile("bot_corpus/dialogues.txt"):
