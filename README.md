@@ -1,8 +1,8 @@
-# VK-Auto-Reply-Bot
+# VK Auto Reply Bot
 
-[RU] Бот для ВКонтакте, способный писать сообщения от лица пользователя по заданному расписанию.
+[RU] Бот для ВКонтакте, способный писать сообщения от лица пользователя по заданному расписанию, с использованием технологий NLU (Nature Language Understanding) или отвечая на строго заданные сообщения.
 
-[EN] VKontakte User Bot with scheduled message sending.
+[EN] VKontakte User Bot with scheduled message sending, NLU (Nature Language Understanding) and managed responses
 
 ## Требования:
 * `pip install vk-api`
@@ -52,6 +52,15 @@ long_poll_bot = LongPollBot()
 long_poll_bot.run_long_poll()
 ```
 
+##### Использование NLU LongPoll Bot:
+```python
+from nlu_longpoll_bot import NLULongPollBot
+
+# создание и запуск бота, автоматически отвечающего на любые сообщения
+nlu_longpoll_bot = NLULongPollBot()
+nlu_longpoll_bot.run_long_poll()
+```
+
 ## Requirements:
 * `pip install vk-api`
 * `pip install schedule`
@@ -98,4 +107,14 @@ from longpoll_bot import LongPollBot
 # long poll bot start with an automatic response to managed messages
 long_poll_bot = LongPollBot()
 long_poll_bot.run_long_poll()
+```
+
+##### NLU LongPoll Bot Usage:
+```python
+from nlu_longpoll_bot import NLULongPollBot
+
+# nature language understanding long poll bot start with an automatic response to user messages
+# russian corpus used
+nlu_longpoll_bot = NLULongPollBot()
+nlu_longpoll_bot.run_long_poll()
 ```
