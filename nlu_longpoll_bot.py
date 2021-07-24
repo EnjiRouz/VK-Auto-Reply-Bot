@@ -3,6 +3,8 @@ from longpoll_bot import LongPollBot  # базовый класс бота из 
 from sklearn.feature_extraction.text import TfidfVectorizer  # для векторизации текста
 from sklearn.linear_model import LogisticRegression  # для классификации намерений
 from vk_api.longpoll import VkEventType  # использование VkEventType
+import zipfile  # для распаковки архива датасета с диалогами
+import os.path  # для проверки наличия файла
 import random  # для генерации случайных ответов
 import nltk  # библиотека для есественной обработки языка
 import json  # представление в качестве JSON
@@ -207,6 +209,12 @@ class NLULongPollBot(LongPollBot):
         Загрузка датасета диалогов для чат-бота путём парсинга файла
         Открытые датасеты диалогов для обучения бота: https://github.com/Koziev/NLP_Datasets
         """
+
+        if not os.path.isfile("bot_corpus/dialogues.txt"):
+            with zipfile.ZipFile("bot_corpus/dialogues.zip", "r") as zip_file:
+                zip_file.extractall("bot_corpus")
+                print("Распаковка датасета завершена")
+
         with open("bot_corpus/dialogues.txt", encoding="utf-8") as file:
             content = file.read()
 
