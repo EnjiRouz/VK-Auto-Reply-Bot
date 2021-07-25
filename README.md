@@ -5,7 +5,7 @@
 [EN] VKontakte User Bot with scheduled message sending, NLU (Nature Language Understanding) and managed responses
 
 ## Требования:
-* `pip install requirements.txt`
+* `pip install -r requirements.txt`
 * создать `.env`-файл для того, чтобы хранить переменные окружения `ACCESS_TOKEN` и `USER_ID`
 
 ## Пример .env-файла:
