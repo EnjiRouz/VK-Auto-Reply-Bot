@@ -2,7 +2,11 @@
 
 [RU] Бот для ВКонтакте, способный писать сообщения от лица пользователя по заданному расписанию, с использованием технологий NLU (Nature Language Understanding) или отвечая на строго заданные сообщения.
 
+YouTube-гайд по проекту: https://youtu.be/FPJ5bgYLOzQ
+
 [EN] VKontakte User Bot with scheduled message sending, NLU (Nature Language Understanding) and managed responses
+
+YouTube Guide for this project: https://youtu.be/FPJ5bgYLOzQ
 
 ## Требования:
 * `pip install -r requirements.txt`
